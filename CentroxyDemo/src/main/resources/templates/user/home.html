@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>After Login Page</h1>
+
+
+
+<h1>Name : [[${user.fullName}]]</h1>
+<h1>Email : [[${user.email}]] </h1>
+<h1>Qualification : [[${user.qualification}]]</h1>
+
+
+<a href="/logout">Logout</a>
+</body>
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Home</title>
+</head>
+<body>
+    <h1>Welcome, <span th:text="${user.fullName}"></span>!</h1>
+    <h2>Email: <span th:text="${user.email}"></span></h2>
+    <h2>Qualification: <span th:text="${user.qualification}"></span></h2>
+    <a href="/logout">Logout</a>
+</body>
+</html>
